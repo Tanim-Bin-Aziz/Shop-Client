@@ -13,13 +13,13 @@ const PopularMenu = () => {
             })
     }, [])
     return (
-        <section className='mb-12'>
+        <section className='mb-12 text-center'>
             <SectionTitle
                 subheading="Check it out"
                 heading="From Our Menu"
             >
             </SectionTitle>
-            <div className='grid md:grid-cols-2 gap-10'>
+            <div className='grid md:grid-cols-2 gap-10 mb-4'>
                 {
                     menu.map(item => <MenuItem
                         key={item._id}
@@ -27,6 +27,7 @@ const PopularMenu = () => {
                     ></MenuItem>)
                 }
             </div>
+            <button className="btn btn-outline border-0 border-b-4 mt-2">Order Now</button>
         </section>
     );
 };
