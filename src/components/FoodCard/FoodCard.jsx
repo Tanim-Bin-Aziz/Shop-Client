@@ -6,7 +6,7 @@ const FoodCard = ({ item }) => {
         <div className="card w-80 bg-base-100 shadow-xl mt-10 my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <figure><img src={image} alt="Shoes" /></figure>
 
-            <div className="card-body">
+            <div className="card-body text-center">
                 <h2 className="card-title">{name}</h2>
                 <p>{recipe}</p>
                 <div className="card-actions items-center space-x-8">
